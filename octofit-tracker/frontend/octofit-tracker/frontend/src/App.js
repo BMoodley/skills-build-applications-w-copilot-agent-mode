@@ -6,11 +6,15 @@ import Teams from './components/Teams';
 import Users from './components/Users';
 import Workouts from './components/Workouts';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from './logo.svg';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+        </header>
         <nav>
           <ul>
             <li><Link to="/activities">Activities</Link></li>
